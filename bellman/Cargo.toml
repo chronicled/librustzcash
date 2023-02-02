@@ -10,8 +10,8 @@ version = "0.6.0"
 edition = "2018"
 
 [dependencies]
-bit-vec = "0.4.4"
-blake2s_simd = "0.5"
+bit-vec = "0.6.3"
+blake2s_simd = "1.0"
 ff = { version = "0.6", path = "../ff" }
 futures = "0.1"
 futures-cpupool = { version = "0.1", optional = true }
