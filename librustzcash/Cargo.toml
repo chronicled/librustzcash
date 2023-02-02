@@ -27,7 +27,7 @@ ff = { version = "0.6", path = "../ff" }
 libc = "0.2"
 pairing = { version = "0.16", path = "../pairing" }
 lazy_static = "1"
-rand_core = "0.5.1"
+rand_core = "0.6.4"
 zcash_history = { version = "0.2", path = "../zcash_history" }
 zcash_primitives = { version = "0.2", path = "../zcash_primitives" }
 zcash_proofs = { version = "0.2", path = "../zcash_proofs" }
