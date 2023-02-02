@@ -13,7 +13,7 @@ edition = "2018"
 [dependencies]
 byteorder = "1"
 ff_derive = { version = "0.6", path = "ff_derive", optional = true }
-rand_core = "0.5"
+rand_core = "0.6.4"
 
 [features]
 default = []

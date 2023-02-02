@@ -20,14 +20,14 @@ where
 {
     let mut data: Vec<u8> = vec![];
     write(&mut data).expect("Should be able to write to a Vec");
-    bech32::encode(hrp, data.to_base32()).expect("hrp is invalid")
+    bech32::encode(hrp, data.to_base32(), bech32::Variant::Bech32).expect("hrp is invalid")
 }
 
 fn bech32_decode<T, F>(hrp: &str, s: &str, read: F) -> Result<Option<T>, Error>
 where
     F: Fn(Vec<u8>) -> Option<T>,
 {
-    let (decoded_hrp, data) = bech32::decode(s)?;
+    let (decoded_hrp, data, _variant) = bech32::decode(s)?;
     if decoded_hrp == hrp {
         Vec::<u8>::from_base32(&data).map(|data| read(data))
     } else {

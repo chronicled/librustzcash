@@ -20,10 +20,10 @@ edition ="2018"
 byteorder = "1"
 ff = { version = "0.6", path = "../ff", features = ["derive"] }
 group = { version = "0.6", path = "../group" }
-rand_core = "0.5"
+rand_core = "0.6.4"
 
 [dev-dependencies]
-rand_xorshift = "0.2"
+rand_xorshift = "0.3.0"
 
 [features]
 unstable-features = ["expose-arith"]
